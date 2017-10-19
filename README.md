@@ -31,3 +31,5 @@ Installation:
 6) Connect to the RooWiFi module through the WiFi adapter.
 
 7) Start Matlab/Simulink. Start a blank Simulink work space and relevant blocks.
+
+You may also download roombaSensorsExample.slx and roombaSensorsExample.slx to test your roomba sensors and wheels.
