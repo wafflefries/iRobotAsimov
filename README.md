@@ -1,12 +1,14 @@
 # iRobotAsimov
 iRobot Roomba Controls Development
 
-This project aims to provide an easy to use simulink library for the purpose of controlling the iRobot Create® 2 Programmable Robot. 
+This project aims to provide an easy to use simulink library for the purpose of controlling the iRobot CreateÂ® 2 Programmable Robot. 
 
 Currently the roombaCtrl.slx library contains two blocks. It relies on the "Matlab Toolbox for the iRobot Create 2" version 1.0 created by Professor Joel M. Esposito of the Systems Engineering Department of United States Naval Academy in Annapolis, Maryland.
 
 RoombaWheelsControl block:
-<img src="../misc/RoombaWheelsControl.png" alt="RoombaWheelsControl">
+
+![alt text](./misc/RoombaWheelsControl.png)
+
 The wCtrl input takes either a '0' or '1'. A '0' means no input to the wheels. A '1' calls the function SetWheelVelRoomba() function which take as input values in the range of '-0.5' to '0.5' for each wheel. '0.5' is the maximum forward velocity, '0' is stop, and '-0.5' is maximum reverse velocity. The 'stat' output can be connected to a display to see the current status of the state flow.
 
 RoombaRangeSensor block:
