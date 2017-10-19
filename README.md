@@ -6,10 +6,11 @@ This project aims to provide an easy to use simulink library for the purpose of 
 Currently the roombaCtrl.slx library contains two blocks. It relies on the "Matlab Toolbox for the iRobot Create 2" version 1.0 created by Professor Joel M. Esposito of the Systems Engineering Department of United States Naval Academy in Annapolis, Maryland.
 
 RoombaWheelsControl block:
+<img src="../misc/RoombaWheelsControl.png" alt="RoombaWheelsControl">
 The wCtrl input takes either a '0' or '1'. A '0' means no input to the wheels. A '1' calls the function SetWheelVelRoomba() function which take as input values in the range of '-0.5' to '0.5' for each wheel. '0.5' is the maximum forward velocity, '0' is stop, and '-0.5' is maximum reverse velocity. The 'stat' output can be connected to a display to see the current status of the state flow.
 
 RoombaRangeSensor block:
-The 'getData' input takes either a '0' or '1'. A '1' calls the RangeStateRoomba() function which grabs the six sensor values and placed it in a 1x6 matrix. The sensor values will either be a '1' for object in range, or a '0' for no object in range. These values can be used for the purpose of collision avoidance.
+The block calls the RangeStateRoomba() function which grabs the six sensor values and placed it in a 1x6 matrix. The sensor values will either be a '1' for object in range, or a '0' for no object in range. These values can be used for the purpose of collision avoidance.
 
 Installation:
 1) In Matlab, click on the Home tab, then click on "Addons". This will open up the Add-On Explorer window. Type 'roomba' into the search bar and then click on "Matlab Toolbox for the iRobot Create 2" in the results. Click 'Add' to download and add to path.
