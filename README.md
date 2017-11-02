@@ -3,9 +3,9 @@ iRobot Roomba Controls Development
 
 This project aims to provide an easy to use simulink library for the purpose of controlling the iRobot Create® 2 Programmable Robot. 
 
-Currently the roombaCtrl.slx library contains two blocks. It relies on the "Matlab Toolbox for the iRobot Create 2" version 1.0 created by Professor Joel M. Esposito of the Systems Engineering Department of United States Naval Academy in Annapolis, Maryland.
+Currently the roombaLibrary.slx library contains four blocks. It relies on the "Matlab Toolbox for the iRobot Create 2" version 1.0 created by Professor Joel M. Esposito of the Systems Engineering Department of United States Naval Academy in Annapolis, Maryland.
 
-RoombaWheelsControl block:
+Wheel Controls block:
 
 ![alt text](./misc/RoombaWheelsControl.png)
 
