@@ -48,7 +48,7 @@ Installation:
 
 Optional: You can download and add to path the 'Real-Time Pacer' library add-on so you can see the state flow running in real time.
 
-#Collision Avoidance Algorithm:
+# Collision Avoidance Algorithm:
 
 Background: The iRobot Create® 2 robot come equipped with six IR sensors spread out in a 180 degree configuration on the front half of the Roomba. From left to right, we will name them sensors 1 to 6.
 
