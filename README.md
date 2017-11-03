@@ -47,3 +47,25 @@ Installation:
 8) Run the 'proj2Ex.slx' file to see an exmple of Roomba control.
 
 Optional: You can download and add to path the 'Real-Time Pacer' library add-on so you can see the state flow running in real time.
+
+#Collision Avoidance Algorithm:
+
+Background: The iRobot Create® 2 robot come equipped with six IR sensors spread out in a 180 degree configuration on the front half of the Roomba. From left to right, we will name them sensors 1 to 6.
+
+1) Reverse for 1 second.
+
+2) Go forward until irState contains '1' for any sensor
+
+3) If sensor 1 detects an obstacle, the Roomba turns right at speed level 1. Higher level equals faster speed, which means greater angle of turn.
+
+4) If sensor 2 detects an obstacle, the Roomba turns right at speed level 2.
+
+5) If sensor 3 detects an obstacle, the Roomba turns right at speed level 3.
+
+6) If sensor 4 detects an obstacle, the Roomba turns left at speed level 3.
+
+7) If sensor 5 detects an obstacle, the Roomba turns left at speed level 2.
+
+8) If sensor 6 detects an obstacle, the Roomba turns left at speed level 1.
+
+9) If the temp value from the Temperature block is greater than or equal to 75 degrees Celsius, the Roomba will stop all Wheel movement in order to lessen the load on the battery. Once the battery as cooled down below the threshhold, it will resume operations.
